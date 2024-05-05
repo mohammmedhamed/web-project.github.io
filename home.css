@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Almarai";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    margin-top: 70px;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    z-index: 1000;
+    position: fixed;
+    margin-top: -130px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #65362795;
+}
+
+.navbar img {
+    padding-left: 20px;
+    padding-right: 109px;
+    width: 80px;
+    margin-top: 15px;
+}
+
+img {
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 50px;
+    margin-top: 15px;
+}
+
+a {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+
+.aa {
+    margin-top: 20px;
+}
+
+.banner {
+    margin-top: 130px;
+}
+
+.banner img {
+    width: 91%;
+    margin: 0;
+}
+
+#user {
+    width: 30px;
+    padding-right: 782px;
+}
+
+.h3_fav {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 30px;
+    color: #653727;
+}
+
+.containerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.containerBox .Box {
+   border: 1px solid #653727;
+   border-radius: 20px;
+   margin: 40px;
+}
+
+.containerBox .Box:hover {
+    margin-top: -30px;
+    transition: 0.4s ease;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.imgBox img {
+    width: 100px;
+}
+
+.containerBox .infoBox {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.containerBox .infoBox h2 {
+    padding: 20px 0px;
+}
+
+.section2 {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section2 .sec2imgR img {
+    width: 550px;
+    padding-left: 20px;
+}
+
+.section2 .sec2imgL img {
+    width: 550px;
+    padding-right: 20px;
+}
+
+.footer-1 {
+    display: flex;
+    padding: 50px 50px 35px 110px;
+}
+
+.footer-logo {
+    display: flex;
+}
+
+.footer-logo img {
+    width: 80px;
+    margin-bottom: 25px;
+}
+
+.footer-logo h1 {
+    margin-top: 25px;
+    color: #653727;
+}
+
+.footer-social {
+    padding-right: 790px;
+    margin-top: 10px;
+}
+
+.footer-social img {
+    width: 35px;
+    padding: 0px 10px;
+    padding-top: 5px;
+}
+
+.footer-social .im:hover {
+    width: 40px;
+}
+
+.footer-lower {
+    font: 600 16px "Comfortaa";
+    color: #333333;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.team-link {
+    font: bold 16px "Comfortaa";
+    color: #653727;
+    padding: 5px;
+}
+
+.team-link:hover {
+    box-shadow: 0.6em 0.6em 1.2em #D2DCE9,
+                -0.5em -0.5em 1em #FFFFFF;
+}
+
+footer {
+    background-color: #FAF5F2;
+    margin-top: 50px;
+}

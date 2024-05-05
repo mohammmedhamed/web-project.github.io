@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حلواني EELU | تسجيل الدخول</title>
+    <link rel="stylesheet" href="login-register.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm">
+            <a href="home.html" class="form_logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <h1 class="form_title">لديك حساب</h1>
+            <input type="email" id="loginEmail" name="loginEmail" class="form_input" autofocus placeholder="البريد الإلكتروني">
+            <input type="password" id="loginPassword" name="loginPassword" class="form_input" autofocus placeholder="كلمة المرور">
+            <button class="form_button" type="submit">تسجيل الدخول</button>
+            <p class="form_text">
+                ليس لديك حساب؟ <a href="register.html" class="form_link">اضغط لإنشاء حساب</a>
+            </p>
+        </form>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var loginEmail = document.getElementById("loginEmail").value;
+            var loginPassword = document.getElementById("loginPassword").value;
+
+            if(loginEmail === "" || loginPassword === "") {
+                alert("يجب إدخال جميع البيانات.");
+                return;
+            }
+
+            if(loginPassword.length < 8) {
+                alert("كلمة المرور يجب أن تحتوي على 8 أحرف على الأقل.");
+                return;
+            }
+
+            alert("تم تسجيل الدخول بنجاح!");
+            window.location.href = "home.html";
+        });
+    </script>
+</body>
+</html>

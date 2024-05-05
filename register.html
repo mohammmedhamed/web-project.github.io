@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حلواني EELU | إنشاء حساب</title>
+    <link rel="stylesheet" href="login-register.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <div class="container">
+        <form id="registerForm">
+            <a href="home.html" class="form_logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <h1 class="form_title">إنشاء حساب</h1>
+            <input type="text" id="registerName" name="registerName" class="form_input" autofocus placeholder="الاسم بالكامل">
+            <input type="email" id="registerEmail" name="registerEmail" class="form_input" autofocus placeholder="البريد الإلكتروني">
+            <input type="password" id="registerPassword" name="registerPassword" class="form_input" autofocus placeholder="كلمة المرور">
+            <input type="password" id="confirmPassword" name="confirmPassword" class="form_input" autofocus placeholder="تأكيد كلمة المرور">
+            <button class="form_button" type="submit">إنشاء حساب</button>
+            <p class="form_text">
+                لديك حساب؟ <a href="login.html" class="form_link">اضغط لتسجيل الدخول</a>
+            </p>
+        </form>
+    </div>
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var registerName = document.getElementById("registerName").value;
+            var registerEmail = document.getElementById("registerEmail").value;
+            var registerPassword = document.getElementById("registerPassword").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if(registerName === "" || registerEmail === "" || registerPassword === "" || confirmPassword === "''") {
+                alert("يجب إدخال جميع البيانات.");
+                return;
+            }
+
+            if(registerPassword.length < 8) {
+                alert("كلمة المرور يجب أن تحتوي على 8 أحرف على الأقل.");
+                return;
+            }
+
+            if(registerPassword !== confirmPassword) {
+                alert("تأكيد كلمة المرور غير متطابق مع كلمة المرور.");
+                return;
+            }
+            
+            alert("تم إنشاء الحساب بنجاح! قم بتسجيل الدخول الآن.");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

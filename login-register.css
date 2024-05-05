@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Almarai", sans-serif;
+    font-size: 18px;
+    background: url(images/background.jpg);
+}
+
+.container {
+    width: 400px;
+    margin: 18px;
+    padding: 36px;
+    box-shadow: 0.6em 0.6em 1.2em #D2DCE9,
+                -0.5em -0.5em 1em #FFFFFF;
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+
+.container,
+.form_input,
+.form_button {
+    font: 500 18px "Almarai", sans-serif;
+}
+
+.form_logo {
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+.form_logo img {
+    width: 100px;
+}
+
+.form_title {
+    text-align: center;
+    margin-bottom: 36px;
+    color: #653727;
+}
+
+.form_input {
+    margin-bottom: 18px;
+    display: block;
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #DDDDDD;
+    outline: none;
+    background: #EEEEEE;
+    text-align: right;
+}
+
+.form_input:focus {
+    border-color: #555555;
+    background: #ffffff;
+}
+
+.form_button {
+    width: 100%;
+    padding: 18px 36px;
+    font-weight: bold;
+    font-size: 20;
+    color: #FFFFFF;
+    background: #653727;
+    border-color: #653727;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.form_button:hover {
+    color: #653727;
+    background: #FFFFFF;
+    border-color: #653727;
+}
+
+.form_text {
+    text-align: center;
+}
+
+.form_link {
+    color: #653727;
+    text-decoration: none;
+}
